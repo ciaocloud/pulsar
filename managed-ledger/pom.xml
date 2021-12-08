@@ -35,18 +35,12 @@
   <dependencies>
     <dependency>
       <groupId>org.apache.bookkeeper</groupId>
+      <artifactId>bookkeeper-common</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.bookkeeper</groupId>
       <artifactId>bookkeeper-server</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.bookkeeper.stats</groupId>
-      <artifactId>prometheus-metrics-provider</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.bookkeeper.stats</groupId>
-      <artifactId>codahale-metrics-provider</artifactId>
-      <version>${bookkeeper.version}</version>
     </dependency>
 
     <dependency>
@@ -55,7 +49,12 @@
     </dependency>
 
     <dependency>
-      <groupId>${project.groupId}</groupId>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.pulsar</groupId>
       <artifactId>pulsar-common</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -76,6 +75,11 @@
       <artifactId>testmocks</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.zookeeper</groupId>
+      <artifactId>zookeeper</artifactId>
     </dependency>
 
     <dependency>
